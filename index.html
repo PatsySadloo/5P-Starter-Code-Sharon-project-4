@@ -1,0 +1,79 @@
+<!DOCTYPE html> <html><head>
+        <title>5.P Starter Code [Sharon project 4]</title>
+        <link href="https://fonts.googleapis.com/css2?family=Garamond" rel="stylesheet">
+    <style>body {
+    font-family: 'Garamond', sans-serif;
+    background-color: purple;
+    text-align: center;
+    color: lightBlue;
+
+}
+
+img {
+    width: 300px;
+    
+
+
+
+}
+
+
+
+
+
+
+</style></head>
+    <body>
+        <div class="title">
+            <h1>What kind of unicorn are you? </h1>
+            <img src="https://media1.giphy.com/media/kcevVVYSqRR2xmFevc/giphy.gif?cid=6c09b952nxnjkp3ocrtqxn0hp2rjkif32jzvjyxmr0cm6u9a&amp;rid=giphy.gif&amp;ct=s">
+            
+        </div>
+
+       
+
+
+
+
+        <div class="questions">
+            <h4>How many cups of coffee do you drink per day?
+            </h4>
+            <input class="Question1" placeholder="number">
+            <img src="https://media3.giphy.com/media/mKWul6L8MCJC2OJU8E/giphy.gif?cid=6c09b9527b3ab6f6b357c663ae9683b8d2b545c76d2ebd27&amp;rid=giphy.gif&amp;ct=s">
+            <h4>Which princess do you prefer?</h4>
+            <input class="Question2" placeholder="Princess">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/67d55c5c-677f-4df6-a631-02ffc162a8b4/daqar0f-90884ce0-982b-4fa7-8116-010f26aaf323.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY3ZDU1YzVjLTY3N2YtNGRmNi1hNjMxLTAyZmZjMTYyYThiNFwvZGFxYXIwZi05MDg4NGNlMC05ODJiLTRmYTctODExNi0wMTBmMjZhYWYzMjMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ohQAuocL_iNVba-IItpuJUd4KJXGE2C3FxsN_gBMobk">
+            <img src="https://fc01.deviantart.net/fs70/f/2014/189/0/5/mini_chibi___fan_art___snow_white_by_kitty_vamp-d7punkm.gif">
+        </div>
+        <button> Click here! </button>
+        <div class="result">
+            
+            
+            <img src="https://gifdb.com/images/high/unicorn-rave-dance-moves-x9m688k9orzw0ew8.gif">
+            
+        </div>
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var fullParagraph = document.querySelector(".results");
+var input = document.querySelector("input");
+var greeting = document.querySelector(".currentUser");
+var submit = document.querySelector("button");
+
+submit.onclick = function () {
+  var Q1 = document.querySelector(".Question1").value;
+  var Q2 = document.querySelector(".Question2").value;
+  var result = document.querySelector(".result");
+  console.log(Q1);
+  console.log(Q2); //result.innerHTML = (Q2);//
+
+  if (Q1 <= 2 && Q2 === "Snow White") {
+    document.querySelector(".result").innerHTML = "<p>" + "You drink" + Q1 + "</p>" + "<p>" + "You prefer" + Q2 + "</p>" + "<p>" + "You are an Amethyst Star Unicorn" + "</p>";
+  } else if (Q1 <= 3 && Q2 === "Moana") {
+    document.querySelector(".result").innerHTML = "<p>" + "You drink " + Q1 + "</p>" + "<p>" + "You prefer" + Q2 + "</p>" + "<p>" + "Omg you are a Diamond Mint Unicorn." + "</p>";
+  }
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImZ1bGxQYXJhZ3JhcGgiLCJkb2N1bWVudCIsInF1ZXJ5U2VsZWN0b3IiLCJpbnB1dCIsImdyZWV0aW5nIiwic3VibWl0Iiwib25jbGljayIsIlExIiwidmFsdWUiLCJRMiIsInJlc3VsdCIsImNvbnNvbGUiLCJsb2ciLCJpbm5lckhUTUwiXSwibWFwcGluZ3MiOiJBQUNBLElBQUlBLGFBQWEsR0FBR0MsUUFBUSxDQUFDQyxhQUFULENBQXVCLFVBQXZCLENBQXBCO0FBQ0EsSUFBSUMsS0FBSyxHQUFHRixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsT0FBdkIsQ0FBWjtBQUNBLElBQUlFLFFBQVEsR0FBR0gsUUFBUSxDQUFDQyxhQUFULENBQXVCLGNBQXZCLENBQWY7QUFDQSxJQUFJRyxNQUFNLEdBQUdKLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixRQUF2QixDQUFiOztBQUNBRyxNQUFNLENBQUNDLE9BQVAsR0FBaUIsWUFBVztBQUN4QixNQUFJQyxFQUFFLEdBQUdOLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ00sS0FBOUM7QUFDQSxNQUFJQyxFQUFFLEdBQUdSLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixZQUF2QixFQUFxQ00sS0FBOUM7QUFDQSxNQUFJRSxNQUFNLEdBQUdULFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixDQUFiO0FBQ0FTLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZTCxFQUFaO0FBQ0FJLEVBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZSCxFQUFaLEVBTHdCLENBT3hCOztBQUVBLE1BQUlGLEVBQUUsSUFBSSxDQUFOLElBQVdFLEVBQUUsS0FBSyxZQUF0QixFQUFvQztBQUNoQ1IsSUFBQUEsUUFBUSxDQUFDQyxhQUFULENBQXVCLFNBQXZCLEVBQWtDVyxTQUFsQyxHQUErQyxRQUFNLFdBQU4sR0FBb0JOLEVBQXBCLEdBQXlCLE1BQXpCLEdBQWtDLEtBQWxDLEdBQTBDLFlBQTFDLEdBQXlERSxFQUF6RCxHQUE4RCxNQUE5RCxHQUF1RSxLQUF2RSxHQUErRSxrQ0FBL0UsR0FBb0gsTUFBbks7QUFHSCxHQUpELE1BTUksSUFBSUYsRUFBRSxJQUFJLENBQU4sSUFBWUUsRUFBRSxLQUFLLE9BQXZCLEVBQWdDO0FBQ2hDUixJQUFBQSxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsRUFBa0NXLFNBQWxDLEdBQStDLFFBQU0sWUFBTixHQUFxQk4sRUFBckIsR0FBMEIsTUFBMUIsR0FBbUMsS0FBbkMsR0FBMkMsWUFBM0MsR0FBMERFLEVBQTFELEdBQStELE1BQS9ELEdBQXdFLEtBQXhFLEdBQWdGLHFDQUFoRixHQUF3SCxNQUF2SztBQUVKO0FBSUEsQ0F0QkoiLCJzb3VyY2VzQ29udGVudCI6WyJcbmxldCBmdWxsUGFyYWdyYXBoID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRzXCIpO1xubGV0IGlucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcImlucHV0XCIpO1xubGV0IGdyZWV0aW5nID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5jdXJyZW50VXNlclwiKTtcbmxldCBzdWJtaXQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiYnV0dG9uXCIpO1xuc3VibWl0Lm9uY2xpY2sgPSBmdW5jdGlvbigpIHtcbiAgICBsZXQgUTEgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLlF1ZXN0aW9uMVwiKS52YWx1ZTtcbiAgICBsZXQgUTIgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLlF1ZXN0aW9uMlwiKS52YWx1ZTtcbiAgICBsZXQgcmVzdWx0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRcIik7XG4gICAgY29uc29sZS5sb2coUTEpO1xuICAgIGNvbnNvbGUubG9nKFEyKTtcblxuICAgIC8vcmVzdWx0LmlubmVySFRNTCA9IChRMik7Ly9cblxuICAgIGlmIChRMSA8PSAyICYmIFEyID09PSBcIlNub3cgV2hpdGVcIikge1xuICAgICAgICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJlc3VsdFwiKS5pbm5lckhUTUwgPSAgXCI8cD5cIitcIllvdSBkcmlua1wiICsgUTEgKyBcIjwvcD5cIiArIFwiPHA+XCIgKyBcIllvdSBwcmVmZXJcIiArIFEyICsgXCI8L3A+XCIgKyBcIjxwPlwiICsgXCJZb3UgYXJlIGFuIEFtZXRoeXN0IFN0YXIgVW5pY29yblwiICsgXCI8L3A+XCI7XG4gICAgICAgICAgICBcbiAgICAgICAgXG4gICAgfVxuXG4gICBlbHNlIGlmIChRMSA8PSAzICAmJiBRMiA9PT0gXCJNb2FuYVwiKSB7XG4gICAgICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmVzdWx0XCIpLmlubmVySFRNTCA9ICBcIjxwPlwiK1wiWW91IGRyaW5rIFwiICsgUTEgKyBcIjwvcD5cIiArIFwiPHA+XCIgKyBcIllvdSBwcmVmZXJcIiArIFEyICsgXCI8L3A+XCIgKyBcIjxwPlwiICsgXCJPbWcgeW91IGFyZSBhIERpYW1vbmQgTWludCBVbmljb3JuLlwiICsgXCI8L3A+XCI7XG4gICAgICAgXG4gICB9XG4gICAgICAgIFxuICAgICAgICAgICAgXG4gICAgICAgICAgICBcbiAgIH07Il19</script></body></html>
